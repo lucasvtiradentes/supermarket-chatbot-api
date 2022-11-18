@@ -1,0 +1,41 @@
+{
+  "name": "supermarket-chatbot-api",
+  "version": "1.0.0",
+  "description": "This is an simple server API used to add supermarkts customer messages to an database, which will be read by supermarket-chatbot and send customer messages in whatsapp.",
+  "license": "MIT",
+  "homepage": "https://github.com/lucasvtiradentes/supermarket-chatbot-api",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucasvtiradentes/supermarket-chatbot-api.git"
+  },
+  "author": {
+    "name": "Lucas Vieira",
+    "email": "lucasvtiradentes@gmail.com",
+    "url": "https://www.linkedin.com/in/lucasvtiradentes"
+  },
+  "bugs": {
+    "url": "https://github.com/lucasvtiradentes/supermarket-chatbot-api/issues"
+  },
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "set PORT=4000 && ts-node-dev --transpile-only --respawn --ignore-watch node_modules src/index.ts",
+    "start": "node ./build/src/index.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.7.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/mongodb": "^4.0.7",
+    "@types/node": "^18.0.5",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
+  }
+}
